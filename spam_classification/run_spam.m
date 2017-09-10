@@ -1,21 +1,3 @@
-%% Machine Learning Online Class
-%  Exercise 6 | Spam Classification with SVMs
-%
-%  Instructions
-%  ------------
-% 
-%  This file contains code that helps you get started on the
-%  exercise. You will need to complete the following functions:
-%
-%     gaussianKernel.m
-%     dataset3Params.m
-%     processEmail.m
-%     emailFeatures.m
-%
-%  For this exercise, you will not need to change any code in this file,
-%  or any other files other than those mentioned above.
-%
-
 %% Initialization
 clear ; close all; clc
 
@@ -41,7 +23,7 @@ fprintf('Program paused. Press enter to continue.\n');
 pause;
 
 %% ==================== Part 2: Feature Extraction ====================
-%  Now, you will convert each email into a vector of features in R^n. 
+%  Now, you will convert each email into a vector of features in R^n.
 %  You should complete the code in emailFeatures.m to produce a feature
 %  vector for a given email.
 
@@ -117,9 +99,9 @@ pause;
 %% =================== Part 6: Try Your Own Emails =====================
 %  Now that you've trained the spam classifier, you can use it on your own
 %  emails! In the starter code, we have included spamSample1.txt,
-%  spamSample2.txt, emailSample1.txt and emailSample2.txt as examples. 
-%  The following code reads in one of these emails and then uses your 
-%  learned SVM classifier to determine whether the email is Spam or 
+%  spamSample2.txt, emailSample1.txt and emailSample2.txt as examples.
+%  The following code reads in one of these emails and then uses your
+%  learned SVM classifier to determine whether the email is Spam or
 %  Not Spam
 
 % Set the file to be read in (change this to spamSample2.txt,
@@ -135,4 +117,3 @@ p = svmPredict(model, x);
 
 fprintf('\nProcessed %s\n\nSpam Classification: %d\n', filename, p);
 fprintf('(1 indicates spam, 0 indicates not spam)\n\n');
-
